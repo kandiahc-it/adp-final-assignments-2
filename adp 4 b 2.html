@@ -1,0 +1,29 @@
+<html> 
+<head>
+<title>events</title>
+</head> 
+<body> 
+<p id="josh" onmousedown="kio(this)">click me!!!! </p> 
+05:54 PM 29-11-2023
+<p>Name:<input type="text" id="demo" onfocus="kios(this.id)">
+<p>Career<input type="text" id="ji" onfocus="kios(this.id)" ></p>
+<p>Type something:<input type="text" id="kop" onfocus="kios(this.id)" ></p>
+<button id="clicking">Submit</button>
+<script> 
+function kio(k){ 
+document.getElementById("josh").innerHTML="The mouse is clicked"; 
+} 
+function kios(X){ 
+document.getElementById(X).style.background="rgba(0,0,25,0.1)";
+ }
+function press(){
+alert("Form filled sucessfully");
+}
+function jio(event){
+alert("this is clicked using:"+event.key+" key listener");
+}
+document.getElementById("clicking").addEventListener('click',press);
+document.getElementById("kop").addEventListener('keypress',jio);
+</script> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> javascript dom</title>
+</head>
+<body>
+<p>DOM</p>
+<p id="demo"></p>
+<p id="deer">Hello,Friends</p>
+<p class="forest">This is the class tag</p>
+<p id="change"> This is changed using style property</p>
+<button   onclick="channel()">Click Me</buton>
+<script>
+function channel()
+{
+const element=document.getElementsByTagName("p");
+const clock="this is changed using class tag";
+document.getElementById("demo").innerHTML="This is the Javascript  In Html using "+element[0].innerHTML;
+document.getElementById("deer").innerHTML="This is changed p tag";
+document.getElementsByClassName("forest").innerHTML=clock;
+document.getElementById("change").style.color="red"; 
+}
+</script>
+</body></html>

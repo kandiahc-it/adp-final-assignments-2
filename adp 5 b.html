@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1> Callback functions</h1>
+<p id="op" style="font-family:algerian"></p>
+<script>
+function perform(value,callback){
+document.write(`this is the value in the document: ${value}`);
+
+setTimeout(function() {
+const re=value*5;
+callback(re);
+},2000);}
+function display(re){
+document.getElementById("op").innerHTML=`the result:${re}`;
+}
+perform(2, display);
+</script>
+</body>
+</html>
